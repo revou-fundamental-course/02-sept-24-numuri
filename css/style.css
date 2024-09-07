@@ -13,6 +13,7 @@
   --defaultFontStyle: normal;
   --defaultBackgroundColor: #0F0F0F;
   --defaultColor: #FFFFFF;
+  --defaultColorButton: #FFFF00;
 }
 
 * {
@@ -29,21 +30,62 @@ body {
   color: var(--defaultColor);
 }
 
-.main-header {
-  margin-top: 95px;
+.welcome-messages {
+  width: 250px;
+  margin: 95px auto 0;
   position: relative;
 }
 
-.main-header > h1 {
+.welcome-messages > h1 {
   text-align: center;
   text-transform: uppercase;
   font-weight: var(--fontBlackWeight);
 }
 
-.main-header > img[alt="vector-element"] {
+.welcome-messages > img[alt="vector-element"] {
   position: absolute;
   top: 35px;
-  right: 132px;
+  right: 30px;
 }
 
+/* Start: Main Content */
+.main-content {
+  margin-block: 125px;
+}
 
+/* Start: Main Buttons */
+.main-buttons {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+.triangle-button > button,
+.parallelogram-button > button {
+  height: 42px;
+  background-color: var(--defaultColorButton);
+  border: none;
+  font-weight: var(--fontExtraBoldWeight);
+  font-size: var(--defaultFontSize);
+  margin-left: -20px;
+
+  cursor: pointer;
+  transition: 0.5s;
+}
+.triangle-button > button {
+  width: 170px;
+}
+.parallelogram-button > button {
+  width: 232px;
+}
+
+.triangle-button:hover > button,
+.parallelogram-button:hover > button {
+  box-shadow: 6px 6px white;
+}
+/* End: Main Buttons */
+
+/* End: Main Content */
+
+.credit {
+  text-align: center;
+}
