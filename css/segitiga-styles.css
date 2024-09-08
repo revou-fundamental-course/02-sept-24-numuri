@@ -1,0 +1,61 @@
+/* Start: Main Content */
+.main__content {
+  margin-block: 125px;
+}
+
+/* Start: Main Buttons */
+.main__buttons {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+.calculate__the__area,
+.calculate__the__circumference {
+  width: max-content;
+}
+.calculate__the__area > button,
+.calculate__the__circumference button,
+.return__button > button {
+  height: 42px;
+  background-color: var(--defaultColorButton);
+  border: none;
+  font-weight: var(--fontExtraBoldWeight);
+  font-size: var(--defaultFontSize);
+  margin-left: -20px;
+
+  cursor: pointer;
+  transition: 0.5s;
+}
+.calculate__the__area > button {
+  width: 180px;
+}
+.calculate__the__circumference > button {
+  width: 232px;
+}
+
+.calculate__the__area:hover > button,
+.calculate__the__circumference:hover > button {
+  box-shadow: 6px 6px white;
+}
+/* End: Main Buttons */
+
+/* Start: Return Button */
+.return__button > button {
+  width: 200px;
+  margin-top: 30px;
+  border: 2px solid var(--defaultColorButton) !important;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.return__button > button > img[alt="arrow__elements"] {
+  width: 15px;
+}
+/* End: Return Button */
+
+/* End: Main Content */

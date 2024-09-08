@@ -1,0 +1,45 @@
+/* Start: Main Content */
+.main__content {
+  margin-block: 125px;
+}
+
+/* Start: Main Buttons */
+.main__buttons {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+.triangle__button,
+.parallelogram__button {
+  width: max-content;
+}
+.triangle__button > button,
+.parallelogram__button > button {
+  height: 42px;
+  background-color: var(--defaultColorButton);
+  border: none;
+  font-weight: var(--fontExtraBoldWeight);
+  font-size: var(--defaultFontSize);
+  margin-left: -20px;
+
+  cursor: pointer;
+  transition: 0.5s;
+}
+.triangle__button > button {
+  width: 170px;
+}
+.parallelogram__button > button {
+  width: 232px;
+}
+
+.triangle__button:hover > button,
+.parallelogram__button:hover > button {
+  box-shadow: 6px 6px white;
+}
+/* End: Main Buttons */
+
+/* End: Main Content */
+
+.credit {
+  text-align: center;
+}
