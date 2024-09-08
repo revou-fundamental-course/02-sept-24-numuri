@@ -30,37 +30,37 @@ body {
   color: var(--defaultColor);
 }
 
-.welcome-messages {
+.welcome__messages {
   width: 250px;
   margin: 95px auto 0;
   position: relative;
 }
 
-.welcome-messages > h1 {
+.welcome__messages > h1 {
   text-align: center;
   text-transform: uppercase;
   font-weight: var(--fontBlackWeight);
 }
 
-.welcome-messages > img[alt="vector-element"] {
+.welcome__messages > img[alt="vector-element"] {
   position: absolute;
   top: 35px;
   right: 30px;
 }
 
 /* Start: Main Content */
-.main-content {
+.main__content {
   margin-block: 125px;
 }
 
 /* Start: Main Buttons */
-.main-buttons {
+.main__buttons {
   display: flex;
   gap: 30px;
   flex-direction: column;
 }
-.triangle-button > button,
-.parallelogram-button > button {
+.triangle__button > button,
+.parallelogram__button > button {
   height: 42px;
   background-color: var(--defaultColorButton);
   border: none;
@@ -71,15 +71,15 @@ body {
   cursor: pointer;
   transition: 0.5s;
 }
-.triangle-button > button {
+.triangle__button > button {
   width: 170px;
 }
-.parallelogram-button > button {
+.parallelogram__button > button {
   width: 232px;
 }
 
-.triangle-button:hover > button,
-.parallelogram-button:hover > button {
+.triangle__button:hover > button,
+.parallelogram__button:hover > button {
   box-shadow: 6px 6px white;
 }
 /* End: Main Buttons */
