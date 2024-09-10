@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/header-styles.css">
   <link rel="stylesheet" href="css/hitung-keliling-segitiga-styles.css">
+  <link rel="stylesheet" href="css/result.css">
 </head>
 <body>
   <a href="segitiga.html" class="back__button">
@@ -40,9 +41,13 @@
       <span>=</span>
       <span>3</span>
       <span>x</span>
-      <input type="number" class="input__number" placeholder="s">
+      <input id="sisi" type="number" class="input__number" placeholder="s">
     </div>
 
-    <button class="result__button">Hitung</button>
+    <p class="results"></p>
+
+    <button class="result__button" onclick="hitungKelilingSegitiga()">Hitung</button>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
