@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/header-styles.css">
   <link rel="stylesheet" href="css/hitung-luas-segitiga-styles.css">
+  <link rel="stylesheet" href="css/result.css">
 </head>
 <body>
   <a href="segitiga.html" class="back__button">
@@ -41,12 +42,16 @@
       <span>=</span>
       <span>1 / 2</span>
       <span>x</span>
-      <input type="number" class="input__number" placeholder="a">
+      <input id="alas" type="number" class="input__number" placeholder="a">
       <span>x</span>
-      <input type="number" class="input__number" placeholder="t">
+      <input id="tinggi" type="number" class="input__number" placeholder="t">
     </div>
 
-    <button class="result__button">Hitung</button>
+    <p class="results"></p>
+
+    <button class="result__button" onclick="hitungLuasSegitiga()">Hitung</button>
   </main>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
