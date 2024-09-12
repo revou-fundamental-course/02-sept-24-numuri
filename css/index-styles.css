@@ -1,11 +1,11 @@
 body { margin-inline: 100px; }
 
+/* Start: Main Header Styles */
 .main__header {
-    margin-block: 196px;
+    margin-block: 230px;
 
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 16.6rem;
 }
 
@@ -37,8 +37,7 @@ body { margin-inline: 100px; }
     align-items: end;
     gap: 35px;
 }
-.triangle__button > button,
-.parallelogram__button > button {
+.triangle__button > button {
     font-family: inherit;    
     background-color: var(--defaultColorButton);
     border: none;
@@ -48,8 +47,7 @@ body { margin-inline: 100px; }
     cursor: pointer;
     transition: 0.5s;
 }
-.triangle__button > button:hover,
-.parallelogram__button > button:hover { box-shadow: 9px 10px white;}
+.triangle__button > button:hover { box-shadow: 9px 10px white;}
 
 .about {
     margin-top: 250px;
@@ -71,6 +69,7 @@ body { margin-inline: 100px; }
     height: 7px;
     background-color: white;
 }
+/* End: Main Header Styles */
 
 /* Start: Section Triangle Styles */
 .triangle {
@@ -213,9 +212,9 @@ body { margin-inline: 100px; }
 }
 /* End: Section Triangle Area */
 
-/* Start: Section Triangle Area */
+/* Start: Section Triangle Around */
 .triangle__around { 
-    margin-block: 250px;
+    margin-block: 250px 60px;
     text-align: center;
 }
 .triangle__around > h3 {
@@ -310,7 +309,7 @@ body { margin-inline: 100px; }
 .back__triangle-section > button:hover {
     box-shadow: none;
 }
-/* End: Section Triangle Area */
+/* End: Section Triangle Around */
 
 /* Start: Styles Up Button */
 .back-to__top {
@@ -332,3 +331,260 @@ body { margin-inline: 100px; }
     box-shadow: none;
 }
 /* End: Styles Up Button */
+
+@media screen and (max-width: 768px ) {
+    body {
+        margin: 0
+    }
+
+    /* Start: Main Header Styles*/
+    .main__header {
+        margin-block: 150px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .opening__remark { position: relative; }
+    .opening__remark > img[alt="background"] {
+        width: 300px;
+    
+        position: absolute;
+        top: -100px;
+    }
+    .main__title {
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+    .opening__remark > img[alt="vector-element-one"] {
+        width: 230px;
+    
+        position: absolute;
+        top: 30px;
+        right: -40px;
+    }
+    .triangle__button > button {
+        border: none;
+        font-size: 20px;
+        padding: 12px 31px;
+        transition: 0.5s;
+    }
+    .triangle__button > button:hover { box-shadow: 9px 10px white;}
+    
+    .about { margin: 0 auto; }
+    .about__button {
+        font-size: 20px;
+        transition: 0.5s;
+    }
+    .about__button:hover { font-size: 20px; }
+    .about > div {
+        width: 50px;
+        height: 4px;
+    }
+    /* End: Main Header Styles */
+
+    /* Start: Section Triangle Styles */
+    .triangle {
+        margin: 0 auto;
+        position: relative;
+
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .triangle > img[alt="dot-element-one"] {
+        width: 60px;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .triangle__action-button {
+        margin-bottom: 50px;
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .action__button > button { padding-inline: 50px; }
+
+    .remark { position: relative; }
+    .remark > h2 {
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .remark > img[alt="vector-element-one"] {
+        width: 150px;
+        height: 20px;
+
+        position: absolute;
+        top: 35px;
+        left: 10px;
+    }
+    .triangle > img[alt="dot-element-two"] {
+        width: 60px;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    /* End: Section Triangle Styles */
+
+    /* Start: Section Triangle Area */
+    .triangle__area { 
+        margin-top: 100px;
+        text-align: center;
+    }
+    .triangle__area > h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .triangle__input-areas {
+        margin-block: 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .formula__area-triangle { position: relative; }
+    .triangle__image {
+        position: relative;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .high__section {
+        position: absolute;
+        right: -20px;
+        top: 45px;
+        rotate: 58deg;
+    }
+    .base__section { margin-top: 8px; }
+    .formula__area-triangle > h4,
+    .formula__area-triangle > h5 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .formula__area-triangle > h4 { margin-top: 26px; }
+    .formula__area-triangle > h5 {
+        margin-top: 10px;
+        font-weight: var(--fontMediumWeight);
+    }
+
+    .input__formula-triangle-area { text-align: center; }
+    .input__formula-triangle-area > h4 { font-size: 20px; }
+    .formula__input {
+        font-size: 16px;
+        font-weight: var(--fontMediumWeight);
+        margin-block: 20px 35px;
+    }
+    .input__base,
+    .input__high {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .input__base {
+        margin-left: 15px;
+    }
+    .input__base > input,
+    .input__high > input {
+        width: 150px;
+        height: 15px;
+        padding: 6px 5px;
+        border-radius: 0px;
+        font-size: 13px;
+    }
+    .input__formula-triangle-area > button {
+        width: 124px;
+        height: 37px;
+        border-radius: 30px;
+        font-size: 15px;
+    }
+
+    .result__bases,
+    .result__bases {
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    /* End: Section Triangle Area */
+
+    /* Start: Section Triangle Around */
+    .triangle__around { 
+        margin-block: 0;
+        text-align: center;
+    }
+    .triangle__around > h3 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .triangle__input-arounds {
+        margin-block: 50px;
+
+        flex-direction: column;
+        gap: 30px;
+    }
+    .formula__around-triangle > h4,
+    .formula__around-triangle > h5 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .formula__around-triangle > h4 { margin-top: 20px; }
+    .formula__around-triangle > h5 { margin-top: 5px; }
+
+    .input__formula-triangle-around > h4 { font-size: 20px; }
+    .formula__input {
+        font-size: 20px;
+        margin-block: 20px 35px;
+    }
+    .input__side{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .input__side { margin-left: 0px; }
+    .input__side > input {
+        width: 150px;
+        height: 15px;
+        padding: 6px 5px;
+        border-radius: 0;
+        font-size: 15px;
+    }
+    .input__side > input::placeholder { color: white; }
+    .input__formula-triangle-around > button {
+        width: 124px;
+        height: 37px;
+        border-radius: 30px;
+        font-size: 15px;
+    }
+
+    .result__arounds {
+        font-size: 15px;
+    }
+    /* End: Section Triangle Around */
+
+    /* Start: Main Footer */
+    .main__footer {
+        margin-top: 30px;
+        font-size: 7px;
+    }
+    /* End: Main Footer */
+
+    /* Start: Styles Up Button */
+    .back-to__top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+    }
+    .back-to__top > button {
+        box-shadow: none;
+    }
+    /* End: Styles Up Button */
+}
