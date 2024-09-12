@@ -119,17 +119,17 @@ body { margin-inline: 100px; }
 }
 /* End: Section Triangle Styles */
 
-/* Start: Section Triangle Base */
-.triangle__base { 
+/* Start: Section Triangle Area */
+.triangle__area { 
     margin-block: 250px;
     text-align: center;
 }
-.triangle__base > h3 {
+.triangle__area > h3 {
     font-size: 46px;
     text-align: center;
 }
 
-.triangle__input-bases {
+.triangle__input-areas {
     margin-block: 114px;
 
     display: flex;
@@ -137,7 +137,7 @@ body { margin-inline: 100px; }
     align-items: center;
     gap: 200px;
 }
-.formula__base-triangle { position: relative; }
+.formula__area-triangle { position: relative; }
 .triangle__image {
     position: relative;
     
@@ -152,19 +152,19 @@ body { margin-inline: 100px; }
     rotate: 58deg;
 }
 .base__section { margin-top: 8px; }
-.formula__base-triangle > h4,
-.formula__base-triangle > h5 {
+.formula__area-triangle > h4,
+.formula__area-triangle > h5 {
     font-size: 26px;
     text-align: center;
 }
-.formula__base-triangle > h4 { margin-top: 26px; }
-.formula__base-triangle > h5 {
+.formula__area-triangle > h4 { margin-top: 26px; }
+.formula__area-triangle > h5 {
     margin-top: 10px;
     font-weight: var(--fontMediumWeight);
 }
 
-.input__formula-triangle-base { text-align: center; }
-.input__formula-triangle-base > h4 { font-size: 26px; }
+.input__formula-triangle-area { text-align: center; }
+.input__formula-triangle-area > h4 { font-size: 26px; }
 .formula__input {
     font-size: 26px;
     font-weight: var(--fontMediumWeight);
@@ -193,101 +193,6 @@ body { margin-inline: 100px; }
 }
 .input__base > input::placeholder,
 .input__high > input::placeholder { color: white; }
-.input__formula-triangle-base > button {
-    width: 228px;
-    height: 57px;
-    border: none;
-    border-radius: 50px;
-    box-shadow: 2px 5px rgba(124, 124, 0, 0.747);
-    font-size: 30px;
-    font-weight: var(--fontBoldWeight);
-    background-color: var(--defaultColorButton);
-    cursor: pointer;
-    transition: 0.5s;
-}
-.input__formula-triangle-base > button:hover { box-shadow: none; }
-
-.results {
-    margin-top: 20px;
-    font-size: 20px;
-}
-/* End: Section Triangle Base */
-
-/* Start: Section Triangle Area */
-.triangle__area { 
-    margin-block: 250px;
-    text-align: center;
-}
-.triangle__area > h3 {
-    font-size: 46px;
-    text-align: center;
-}
-
-.triangle__input-areas {
-    margin-block: 114px;
-
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    gap: 200px;
-}
-.formula__area-triangle { position: relative; }
-.triangle__image {
-    position: relative;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.high__section {
-    position: absolute;
-    right: -20px;
-    top: 45px;
-    rotate: 58deg;
-}
-.area__section { margin-top: 8px; }
-.formula__area-triangle > h4,
-.formula__area-triangle > h5 {
-    font-size: 26px;
-    text-align: center;
-}
-.formula__area-triangle > h4 { margin-top: 26px; }
-.formula__area-triangle > h5 {
-    margin-top: 10px;
-    font-weight: var(--fontMediumWeight);
-}
-
-.input__formula-triangle-area { text-align: center; }
-.input__formula-triangle-area > h4 { font-size: 26px; }
-.formula__input {
-    font-size: 26px;
-    font-weight: var(--fontMediumWeight);
-    margin-block: 50px 55px;
-}
-.input__area,
-.input__high {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-.input__area {
-    margin-left: 25px;
-}
-.input__area > input,
-.input__high > input {
-    width: 200px;
-    height: 30px;
-    padding: 12px 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: inherit;
-    color: white;
-    font-family: inherit;
-    font-size: 20px;
-}
-.input__area > input::placeholder,
-.input__high > input::placeholder { color: white; }
 .input__formula-triangle-area > button {
     width: 228px;
     height: 57px;
@@ -301,6 +206,90 @@ body { margin-inline: 100px; }
     transition: 0.5s;
 }
 .input__formula-triangle-area > button:hover { box-shadow: none; }
+
+.results {
+    margin-top: 20px;
+    font-size: 20px;
+}
+/* End: Section Triangle Area */
+
+/* Start: Section Triangle Area */
+.triangle__around { 
+    margin-block: 250px;
+    text-align: center;
+}
+.triangle__around > h3 {
+    font-size: 46px;
+    text-align: center;
+}
+
+.triangle__input-arounds {
+    margin-block: 114px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+.formula__around-triangle { position: relative; }
+.triangle__image {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.side__section { margin-top: 8px; }
+.formula__around-triangle > h4,
+.formula__around-triangle > h5 {
+    font-size: 26px;
+    text-align: center;
+}
+.formula__around-triangle > h4 { margin-top: 26px; }
+.formula__around-triangle > h5 {
+    margin-top: 10px;
+    font-weight: var(--fontMediumWeight);
+}
+
+.input__formula-triangle-around { text-align: center; }
+.input__formula-triangle-around > h4 { font-size: 26px; }
+.formula__input {
+    font-size: 26px;
+    font-weight: var(--fontMediumWeight);
+    margin-block: 50px 55px;
+}
+.input__side{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.input__side { margin-left: 25px; }
+.input__side > input {
+    width: 200px;
+    height: 30px;
+    padding: 12px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: inherit;
+    color: white;
+    font-family: inherit;
+    font-size: 20px;
+}
+.input__side > input::placeholder { color: white; }
+.input__formula-triangle-around > button {
+    width: 228px;
+    height: 57px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 2px 5px rgba(124, 124, 0, 0.747);
+    font-size: 30px;
+    font-weight: var(--fontBoldWeight);
+    background-color: var(--defaultColorButton);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.input__formula-triangle-around > button:hover { box-shadow: none; }
 
 .results {
     margin-top: 20px;

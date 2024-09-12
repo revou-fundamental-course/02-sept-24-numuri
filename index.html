@@ -35,10 +35,10 @@
       <img src="assets/dot-element-one.svg" alt="dot-element-one">
   
       <div class="triangle__action-button">
-        <a href="#triangle__bases" class="triangle__button action__button">
+        <a href="#triangle__arounds" class="triangle__button action__button">
           <button>Luas</button>
         </a>
-        <a href="#triangle__areas" class="triangle__button action__button">
+        <a href="#triangle__arounds" class="triangle__button action__button">
           <button>Keliling</button>
         </a>
       </div>
@@ -51,11 +51,12 @@
       <img src="assets/dot-element-two.svg" alt="dot-element-two">
     </section>
   
-    <section id="triangle__bases" class="triangle__base">
+    <!-- Start: Section Triangle Area -->
+    <section id="triangle__areas" class="triangle__area">
       <h3>Luas Segitiga</h3>
 
-      <div class="triangle__input-bases">
-        <div class="formula__base-triangle">
+      <div class="triangle__input-areas">
+        <div class="formula__area-triangle">
           <div class="triangle__image">
             <span class="high__section">t = tinggi</span>
             <img src="assets/triangle.svg" alt="triangle">
@@ -65,7 +66,7 @@
           <h5>L = 1 / 2 x a x t</h5>
         </div>
   
-        <div class="input__formula-triangle-base">
+        <div class="input__formula-triangle-area">
           <h4>Masukkan Nilai</h4>
 
           <div class="formula__input">
@@ -77,7 +78,7 @@
             </div>
           </div>
 
-          <button>Hitung</button>
+          <button onclick="countTriangleBase()">Hitung</button>
   
           <p class="results">Luas segitiga tersebut adalah 20</p>
         </div>
@@ -89,12 +90,14 @@
         </button>
       </a>
     </section>
+    <!-- End: Section Triangle Area -->
 
-    <section id="triangle__areas" class="triangle__area">
+    <!-- Start: Section Triangle Around -->
+    <section id="triangle__arounds" class="triangle__around">
       <h3>Keliling Segitiga</h3>
 
-      <div class="triangle__input-areas">
-        <div class="formula__area-triangle">
+      <div class="triangle__input-arounds">
+        <div class="formula__around-triangle">
           <div class="triangle__image">
             <img src="assets/triangle.svg" alt="triangle">
             <span class="side__section">s = sisi</span>
@@ -103,11 +106,11 @@
           <h5>K = 3 x s</h5>
         </div>
   
-        <div class="input__formula-triangle-area">
+        <div class="input__formula-triangle-around">
           <h4>Masukkan Nilai</h4>
 
           <div class="formula__input">
-            <div class="input__area">
+            <div class="input__side">
               <span>Sisi: </span><input type="number" placeholder="Masukkan Sisi">
             </div>
           </div>
@@ -124,6 +127,7 @@
         </button>
       </a>
     </section>
+    <!-- End: Section Triangle Around -->
   </main>
 
   <a href="#" class="back-to__top">
