@@ -291,7 +291,8 @@ body { margin-inline: 100px; }
 }
 .input__formula-triangle-around > button:hover { box-shadow: none; }
 
-.results {
+.result__bases,
+.result__arounds {
     margin-top: 20px;
     font-size: 20px;
 }

@@ -35,7 +35,7 @@
       <img src="assets/dot-element-one.svg" alt="dot-element-one">
   
       <div class="triangle__action-button">
-        <a href="#triangle__arounds" class="triangle__button action__button">
+        <a href="#triangle__areas" class="triangle__button action__button">
           <button>Luas</button>
         </a>
         <a href="#triangle__arounds" class="triangle__button action__button">
@@ -71,16 +71,16 @@
 
           <div class="formula__input">
             <div class="input__base">
-              <span>Alas: </span><input type="number" placeholder="Masukkan Alas">
+              <span>Alas: </span><input type="number" placeholder="Masukkan Alas" class="base">
             </div>
             <div class="input__high">
-              <span>Tinggi: </span><input type="number" placeholder="Masukkan Tinggi">
+              <span>Tinggi: </span><input type="number" placeholder="Masukkan Tinggi" class="high">
             </div>
           </div>
 
           <button onclick="countTriangleBase()">Hitung</button>
   
-          <p class="results">Luas segitiga tersebut adalah 20</p>
+          <p class="result__bases"></p>
         </div>
       </div>
 
@@ -111,13 +111,13 @@
 
           <div class="formula__input">
             <div class="input__side">
-              <span>Sisi: </span><input type="number" placeholder="Masukkan Sisi">
+              <span>Sisi: </span><input type="number" placeholder="Masukkan Sisi" class="side">
             </div>
           </div>
 
-          <button>Hitung</button>
+          <button onclick="countTriangleAround()">Hitung</button>
   
-          <p class="results">Keliling segitiga tersebut adalah 20</p>
+          <p class="result__arounds"></p>
         </div>
       </div>
 
@@ -135,5 +135,7 @@
       <img src="assets/arrow_up.svg" alt="arrow_up">
     </button>
   </a>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
