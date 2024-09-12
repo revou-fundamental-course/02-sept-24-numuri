@@ -5,28 +5,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mini Project - RevoU</title>
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/main-styles.css">
-  <link rel="stylesheet" href="css/header-styles.css">
+  <link rel="stylesheet" href="css/index-styles.css">
 </head>
 <body>
-  <header class="main__header">
-    <div class="welcome__messages">
-      <h1>Welcome</h1>
-      <img src="assets/vector-element-one.svg" alt="vector-element">
+  <header id="header" class="main__header">
+    <div class="opening__remark">
+      <img src="assets/background-main.svg" alt="background">
+      <h1 class="main__title">Welcome</h1>
+      <img src="assets/vector-element-one.svg" alt="vector-element-one">
+    </div>
+
+    <div class="main__buttons">
+      <a href="#triangle__section" class="triangle__button">
+        <button>Segitiga</button>
+      </a>
+      <a href="#" class="parallelogram__button">
+        <button>Jajargenjang</button>
+      </a>
+
+      <section class="about">
+        <a href="#" class="about__button">about</a>
+        <div></div>
+      </section>
     </div>
   </header>
-  
+
   <main class="main__content">
-    <div class="main__buttons">
-      <a href="segitiga.html" class="triangle__button"><button>Segitiga</button></a>
-      <a href="#" class="parallelogram__button"><button>Jajargenjang</button></a>
-    </div>
+    <section id="triangle__section" class="triangle">
+      <img src="assets/dot-element-one.svg" alt="dot-element-one">
+  
+      <div class="triangle__action-button">
+        <a href="#triangle__bases" class="triangle__button action__button">
+          <button>Luas</button>
+        </a>
+        <a href="#triangle__areas" class="triangle__button action__button">
+          <button>Keliling</button>
+        </a>
+      </div>
+  
+      <div class="remark">
+        <h2>Segitiga</h2>
+        <img src="assets/vector-element-one.svg" alt="vector-element-one">
+      </div>
+  
+      <img src="assets/dot-element-two.svg" alt="dot-element-two">
+    </section>
+  
+    <section id="triangle__bases" class="triangle__base">
+      <h3>Luas Segitiga</h3>
+
+      <div class="triangle__input-bases">
+        <div class="formula__base-triangle">
+          <div class="triangle__image">
+            <span class="high__section">t = tinggi</span>
+            <img src="assets/triangle.svg" alt="triangle">
+            <span class="base__section">a = alas</span>
+          </div>
+          <h4 class="formula__title">Rumus</h4>
+          <h5>L = 1 / 2 x a x t</h5>
+        </div>
+  
+        <div class="input__formula-triangle-base">
+          <h4>Masukkan Nilai</h4>
+
+          <div class="formula__input">
+            <div class="input__base">
+              <span>Alas: </span><input type="number" placeholder="Masukkan Alas">
+            </div>
+            <div class="input__high">
+              <span>Tinggi: </span><input type="number" placeholder="Masukkan Tinggi">
+            </div>
+          </div>
+
+          <button>Hitung</button>
+  
+          <p class="results">Luas segitiga tersebut adalah 20</p>
+        </div>
+      </div>
+
+      <a href="#triangle__section" class="back__triangle-section">
+        <button>
+          <img src="assets/arrow_back.svg" alt="arrow_back">
+        </button>
+      </a>
+    </section>
+
+    <section id="triangle__areas" class="triangle__area">
+      <h3>Keliling Segitiga</h3>
+
+      <div class="triangle__input-areas">
+        <div class="formula__area-triangle">
+          <div class="triangle__image">
+            <img src="assets/triangle.svg" alt="triangle">
+            <span class="side__section">s = sisi</span>
+          </div>
+          <h4 class="formula__title">Rumus</h4>
+          <h5>K = 3 x s</h5>
+        </div>
+  
+        <div class="input__formula-triangle-area">
+          <h4>Masukkan Nilai</h4>
+
+          <div class="formula__input">
+            <div class="input__area">
+              <span>Sisi: </span><input type="number" placeholder="Masukkan Sisi">
+            </div>
+          </div>
+
+          <button>Hitung</button>
+  
+          <p class="results">Keliling segitiga tersebut adalah 20</p>
+        </div>
+      </div>
+
+      <a href="#triangle__section" class="back__triangle-section">
+        <button>
+          <img src="assets/arrow_back.svg" alt="arrow_back">
+        </button>
+      </a>
+    </section>
   </main>
 
-  <footer class="main__footer">
-    <p class="credit">
-      Created by &copy; lone a.k.a kygajee
-    </p>
-  </footer>
+  <a href="#" class="back-to__top">
+    <button>
+      <img src="assets/arrow_up.svg" alt="arrow_up">
+    </button>
+  </a>
 </body>
 </html>

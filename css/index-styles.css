@@ -1,0 +1,344 @@
+body { margin-inline: 100px; }
+
+.main__header {
+    margin-block: 196px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16.6rem;
+}
+
+.opening__remark { position: relative; }
+.opening__remark > img[alt="background"] {
+    width: 520px;
+
+    position: absolute;
+    top: -10rem;
+    left: -3rem;
+    z-index: -9999;
+}
+.main__title {
+    font-size: 88px;
+    text-transform: uppercase;
+}
+.opening__remark > img[alt="vector-element-one"] {
+    width: 430px;
+    height: 56px;
+
+    position: absolute;
+    top: 95px;
+    right: -40px;
+}
+
+.main__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 35px;
+}
+.triangle__button > button,
+.parallelogram__button > button {
+    font-family: inherit;    
+    background-color: var(--defaultColorButton);
+    border: none;
+    font-size: 40px;
+    font-weight: var(--fontBoldWeight);
+    padding: 12px 31px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.triangle__button > button:hover,
+.parallelogram__button > button:hover { box-shadow: 9px 10px white;}
+
+.about {
+    margin-top: 250px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about__button {
+    color: white;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: var(--fontBoldWeight);
+    transition: 0.5s;
+}
+.about__button:hover { font-size: 25px; }
+.about > div {
+    width: 98px;
+    height: 7px;
+    background-color: white;
+}
+
+/* Start: Section Triangle Styles */
+.triangle {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 380px;
+}
+.triangle > img[alt="dot-element-one"] {
+    width: 130px;
+
+    position: absolute;
+    top: -150px;
+    right: 40px;
+}
+.triangle__action-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 60px;
+}
+.action__button > button { padding-inline: 120px; }
+
+.remark { position: relative; }
+.remark > h2 {
+    font-size: 68px;
+    text-transform: uppercase;
+}
+.remark > img[alt="vector-element-one"] {
+    width: 450px;
+    height: 56px;
+
+    position: absolute;
+    top: 70px;
+    left: -10px;
+}
+.triangle > img[alt="dot-element-two"] {
+    width: 130px;
+
+    position: absolute;
+    bottom: -200px;
+    left: 30px;
+}
+/* End: Section Triangle Styles */
+
+/* Start: Section Triangle Base */
+.triangle__base { 
+    margin-block: 250px;
+    text-align: center;
+}
+.triangle__base > h3 {
+    font-size: 46px;
+    text-align: center;
+}
+
+.triangle__input-bases {
+    margin-block: 114px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+.formula__base-triangle { position: relative; }
+.triangle__image {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.high__section {
+    position: absolute;
+    right: -20px;
+    top: 45px;
+    rotate: 58deg;
+}
+.base__section { margin-top: 8px; }
+.formula__base-triangle > h4,
+.formula__base-triangle > h5 {
+    font-size: 26px;
+    text-align: center;
+}
+.formula__base-triangle > h4 { margin-top: 26px; }
+.formula__base-triangle > h5 {
+    margin-top: 10px;
+    font-weight: var(--fontMediumWeight);
+}
+
+.input__formula-triangle-base { text-align: center; }
+.input__formula-triangle-base > h4 { font-size: 26px; }
+.formula__input {
+    font-size: 26px;
+    font-weight: var(--fontMediumWeight);
+    margin-block: 50px 55px;
+}
+.input__base,
+.input__high {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.input__base {
+    margin-left: 25px;
+}
+.input__base > input,
+.input__high > input {
+    width: 200px;
+    height: 30px;
+    padding: 12px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: inherit;
+    color: white;
+    font-family: inherit;
+    font-size: 20px;
+}
+.input__base > input::placeholder,
+.input__high > input::placeholder { color: white; }
+.input__formula-triangle-base > button {
+    width: 228px;
+    height: 57px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 2px 5px rgba(124, 124, 0, 0.747);
+    font-size: 30px;
+    font-weight: var(--fontBoldWeight);
+    background-color: var(--defaultColorButton);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.input__formula-triangle-base > button:hover { box-shadow: none; }
+
+.results {
+    margin-top: 20px;
+    font-size: 20px;
+}
+/* End: Section Triangle Base */
+
+/* Start: Section Triangle Area */
+.triangle__area { 
+    margin-block: 250px;
+    text-align: center;
+}
+.triangle__area > h3 {
+    font-size: 46px;
+    text-align: center;
+}
+
+.triangle__input-areas {
+    margin-block: 114px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+.formula__area-triangle { position: relative; }
+.triangle__image {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.high__section {
+    position: absolute;
+    right: -20px;
+    top: 45px;
+    rotate: 58deg;
+}
+.area__section { margin-top: 8px; }
+.formula__area-triangle > h4,
+.formula__area-triangle > h5 {
+    font-size: 26px;
+    text-align: center;
+}
+.formula__area-triangle > h4 { margin-top: 26px; }
+.formula__area-triangle > h5 {
+    margin-top: 10px;
+    font-weight: var(--fontMediumWeight);
+}
+
+.input__formula-triangle-area { text-align: center; }
+.input__formula-triangle-area > h4 { font-size: 26px; }
+.formula__input {
+    font-size: 26px;
+    font-weight: var(--fontMediumWeight);
+    margin-block: 50px 55px;
+}
+.input__area,
+.input__high {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.input__area {
+    margin-left: 25px;
+}
+.input__area > input,
+.input__high > input {
+    width: 200px;
+    height: 30px;
+    padding: 12px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: inherit;
+    color: white;
+    font-family: inherit;
+    font-size: 20px;
+}
+.input__area > input::placeholder,
+.input__high > input::placeholder { color: white; }
+.input__formula-triangle-area > button {
+    width: 228px;
+    height: 57px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 2px 5px rgba(124, 124, 0, 0.747);
+    font-size: 30px;
+    font-weight: var(--fontBoldWeight);
+    background-color: var(--defaultColorButton);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.input__formula-triangle-area > button:hover { box-shadow: none; }
+
+.results {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.back__triangle-section > button {
+    width: 60px;
+    height: 60px;
+    background-color: var(--defaultColorButton);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 2px 4px rgba(124, 124, 0, 0.747);
+    transition: 0.5s;
+}
+.back__triangle-section > button:hover {
+    box-shadow: none;
+}
+/* End: Section Triangle Area */
+
+/* Start: Styles Up Button */
+.back-to__top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+.back-to__top > button {
+    width: 60px;
+    height: 60px;
+    background-color: var(--defaultColorButton);;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 3px 4px white;
+}
+.back-to__top > button:hover {
+    box-shadow: none;
+}
+/* End: Styles Up Button */
